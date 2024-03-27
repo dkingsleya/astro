@@ -10,10 +10,11 @@ const { href, title, body } = Astro.props;
 
 <li class="link-card">
 	<a href={href}>
-		<h2>
-			{title}
-			<span>&rarr;</span>
-		</h2>
+		<code>
+			<h2>
+				{title}
+			</h2>
+		</code>
 		<p>
 			{body}
 		</p>
@@ -24,7 +25,7 @@ const { href, title, body } = Astro.props;
 		list-style: none;
 		display: flex;
 		padding: 1px;
-		background-color: #23262d;
+		background-color: rgba(255, 255, 255, 0.575);
 		background-image: none;
 		background-size: 400%;
 		border-radius: 7px;
@@ -44,7 +45,7 @@ const { href, title, body } = Astro.props;
 	}
 	h2 {
 		margin: 0;
-		font-size: 1.25rem;
+		font-size: 2rem;
 		transition: color 0.6s cubic-bezier(0.22, 1, 0.36, 1);
 	}
 	p {
